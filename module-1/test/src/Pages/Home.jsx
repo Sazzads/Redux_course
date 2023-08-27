@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from '../Components/Counter';
 import Cart from '../Components/Cart';
+import Form from '../Components/Form';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             Home
             <Counter></Counter>
             <Cart></Cart>
+            <Form></Form>
         </div>
     );
 };

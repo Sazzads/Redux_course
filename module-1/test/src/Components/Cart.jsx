@@ -1,13 +1,19 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { dec, decByValue, inc, incByValue } from '../Redux/featurers/Cart/cartSlice';
+import Display from './Display';
 
 const Cart = () => {
     const { calc } = useSelector((state) => state.calc)
     const dispatch = useDispatch()
+
+
     return (
         <div className='border-2 border-black p-3 my-10 mx-32 mx-auto'>
 
+            <div className='border-2 border-black bg-pink-200 p-3 w-80 h-48 my-5 mx-auto'>
+                <Display></Display>
+            </div>
             <div>
                 <div className='text-center'>
                     <h2>Cart</h2>
