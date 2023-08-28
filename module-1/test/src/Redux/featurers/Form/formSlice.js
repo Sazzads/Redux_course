@@ -12,6 +12,7 @@ const formSlice = createSlice({
         setFormData: (state, action) => {
             // state.formdata.push(action.payload); //for array
             state.formdata = action.payload;
+           
         },
     },
 });
